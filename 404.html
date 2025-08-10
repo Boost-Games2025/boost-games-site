@@ -1,1 +1,77 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сторінку не знайдено - boost games</title>
+    <style>
+        /* Стилі для сторінки 404, вбудовані в HTML */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            line-height: 1.6;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Робить сторінку повною висотою вікна */
+        }
 
+        .container {
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        .error-title {
+            font-size: 8rem; /* Великий розмір для "404" */
+            margin: 0;
+            color: #ff4500;
+            text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .error-message {
+            font-size: 2rem;
+            margin: 20px 0;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #ff4500;
+            color: #fff;
+            padding: 15px 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #e63900;
+            transform: scale(1.05);
+        }
+
+        /* Адаптивність для менших екранів */
+        @media (max-width: 768px) {
+            .error-title {
+                font-size: 5rem;
+            }
+
+            .error-message {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="error-title">404</h1>
+        <p class="error-message">Упс, здається, ви потрапили на неіснуючу сторінку.</p>
+        <p>Не хвилюйтеся, ви можете повернутися на головну сторінку.</p>
+        <a href="index.html" class="button">На головну</a>
+    </div>
+</body>
+</html>
