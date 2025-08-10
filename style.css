@@ -128,7 +128,7 @@ nav a:hover::after {
     transform: scale(1.05);
 }
 
-/* Секція ігор */
+/* Секції контенту */
 .games-section, .content-section {
     padding: 80px 0;
 }
@@ -140,6 +140,14 @@ h2 {
     margin-bottom: 50px;
 }
 
+.subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+/* Картки ігор/послуг */
 .game-cards, .service-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -178,6 +186,130 @@ h2 {
 
 .service-card .button {
     margin-bottom: 20px;
+}
+
+/* Таблиця цін */
+.price-table {
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+.price-table h3 {
+    text-align: center;
+    color: #ff4500;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+}
+
+th {
+    background-color: #333;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+tr:hover {
+    background-color: #333;
+}
+
+.cta-text {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 40px 0 20px;
+}
+
+/* Контактна інформація та форма */
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.info-item {
+    flex-basis: 30%;
+    background-color: #2a2a2a;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.info-item h3 {
+    color: #ff4500;
+    margin-bottom: 10px;
+}
+
+.info-item a {
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.info-item a:hover {
+    color: #ff4500;
+}
+
+.social-links-contact a {
+    margin: 0 10px;
+    font-size: 1rem;
+}
+
+.contact-form-section {
+    background-color: #2a2a2a;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contact-form-section h3 {
+    text-align: center;
+    color: #ff4500;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #e0e0e0;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form .button {
+    width: 100%;
+    border: none;
+    text-align: center;
+    font-size: 1.1rem;
 }
 
 /* Футер (Footer) */
@@ -225,5 +357,15 @@ footer {
     }
     h2 {
         font-size: 2.5rem;
+    }
+    .contact-info {
+        flex-direction: column;
+    }
+    .price-table {
+        padding: 15px;
+    }
+    th, td {
+        padding: 10px;
+        font-size: 0.9rem;
     }
 }
